@@ -3,11 +3,13 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
-import Nav from "./Nav";
+// import Main from "./components/Main";
+// import Nav from "./Nav";
 
-import Home from "./pages/Home";
-import Booking from "./pages/Booking";
+import HomePage from "./pages/HomePage";
+import BookingPage from "./pages/BookingPage";
+import AboutPage from "./pages/AboutPage";
+import Main from "../src/components/Main";
 function App() {
   return (
     <BrowserRouter>
@@ -16,11 +18,13 @@ function App() {
       {/* <Nav /> */}
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/booking" element={<Booking />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Booking" element={<Main />} />
+          <Route path="/About" element={<AboutPage />} />
         </Routes>
       </main>
-      <Main />
+
+      {/* <Main /> */}
 
       <Footer />
     </BrowserRouter>

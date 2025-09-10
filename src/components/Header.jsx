@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import LogoPng from "../assets/LogoNew.png";
 
@@ -10,19 +10,14 @@ export default function Header() {
     <header className="header">
       <div className="container header-container">
         <div className="logo-section">
-          <img
-            // src="logosdfsdf.png"
-            // src="../assets/lo"
-            src={LogoPng}
-            alt="Little Lemon Logo"
-            className="logo"
-          />
+          <img src={LogoPng} alt="Little Lemon Logo" className="logo" />
           <span className="title">Little Lemon</span>
         </div>
 
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/booking">Booking</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/Booking">Booking</NavLink>
+          <NavLink to="/About">About</NavLink>
         </nav>
       </div>
     </header>
