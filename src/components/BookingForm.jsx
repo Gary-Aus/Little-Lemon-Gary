@@ -21,6 +21,7 @@ function BookingForm({ availableTimes, dispatch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!isFormValid) return;
 
     alert(

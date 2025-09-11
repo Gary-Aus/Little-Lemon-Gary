@@ -1,12 +1,11 @@
 import React from "react";
-import BookingForm from "../components/BookingForm";
+// import BookingForm from "../components/BookingForm";
+import Main from "../components/Main";
 
 export default function BookingPage({ availableTimes, dispatch }) {
   return (
     <section className="container">
-      <h2>Book a Table</h2>
-      <p>Reserve your table in advance to enjoy a great dining experience.</p>
-      <BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+      <Main />
     </section>
 
     // <section className="container">
