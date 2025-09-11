@@ -27,7 +27,7 @@ export default function BookingPage({ availableTimes, dispatch }) {
     //       <input type="number" min="1" max="20" required />
     //     </label>
 
-    //     <button type="submit" className="btn-primary">
+    //     <button type="submit" className="btn-booking">
     //       Reserve
     //     </button>
     //   </form>

@@ -84,8 +84,9 @@ function BookingForm({ availableTimes, dispatch }) {
       <input
         type="submit"
         value="Make Your reservation"
-        className="btn-primary"
+        className="btn-submit"
         disabled={!isFormValid} // 禁用无效提交
+        // disabled
       />
     </form>
   );
