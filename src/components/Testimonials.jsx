@@ -9,6 +9,7 @@ export default function Testimonials() {
   return (
     <section className="testimonials container">
       <h2>Customer Testimonials</h2>
+
       <div className="cards">
         {reviews.map((r) => (
           <div key={r.id} className="card">
