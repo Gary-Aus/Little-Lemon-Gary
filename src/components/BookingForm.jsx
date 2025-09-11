@@ -6,14 +6,12 @@ function BookingForm({ availableTimes, dispatch }) {
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
 
-  // 检查表单是否有效
   const isFormValid = date && time && guests > 0 && occasion;
 
   const handleDateChange = (e) => {
     const newDate = e.target.value;
     setDate(newDate);
 
-    // 触发 reducer 更新 availableTimes
     if (dispatch && typeof dispatch === "function") {
       dispatch({ type: "UPDATE_DATE", date: newDate });
     }
@@ -85,8 +83,7 @@ function BookingForm({ availableTimes, dispatch }) {
         type="submit"
         value="Make Your reservation"
         className="btn-submit"
-        disabled={!isFormValid} // 禁用无效提交
-        // disabled
+        disabled={!isFormValid}
       />
     </form>
   );

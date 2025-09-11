@@ -4,7 +4,6 @@ import LogoPng from "../assets/LogoNew.png";
 function Footer() {
   return (
     <footer className="footer">
-      {/* 左侧 Logo 和简介 */}
       <div className="footer-section">
         <img src={LogoPng} alt="Little Lemon Logo" className="footer-logo" />
         <p className="footer-text">
@@ -13,7 +12,6 @@ function Footer() {
         </p>
       </div>
 
-      {/* 中间导航 */}
       <div className="footer-section">
         <h4 className="footer-title">Navigation</h4>
         <ul className="footer-links">
@@ -35,7 +33,6 @@ function Footer() {
         </ul>
       </div>
 
-      {/* 右侧 社交/版权 */}
       <div className="footer-section">
         <h4 className="footer-title">Follow Us</h4>
         <div className="footer-socials">

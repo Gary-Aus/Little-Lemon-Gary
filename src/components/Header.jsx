@@ -1,11 +1,9 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import LogoPng from "../assets/LogoNew.png";
 
 export default function Header() {
-  // console.log("Logo path:", LogoIcon); // 查看控制台输出
-
   return (
     <header className="header">
       <div className="container header-container">

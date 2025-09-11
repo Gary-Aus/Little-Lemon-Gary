@@ -6,7 +6,6 @@ import Testimonials from "../components/Testimonials";
 export default function HomePage() {
   return (
     <>
-      {/* <h1>HomePage</h1> */}
       <CallToAction />
       <Specials />
       <Testimonials />
